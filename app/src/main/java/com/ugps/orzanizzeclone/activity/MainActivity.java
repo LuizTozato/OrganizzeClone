@@ -1,4 +1,4 @@
-package com.ugps.orzanizzeclone;
+package com.ugps.orzanizzeclone.activity;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -8,6 +8,7 @@ import android.view.View;
 
 import com.heinrichreimersoftware.materialintro.app.IntroActivity;
 import com.heinrichreimersoftware.materialintro.slide.FragmentSlide;
+import com.ugps.orzanizzeclone.R;
 import com.ugps.orzanizzeclone.activity.CadastroActivity;
 import com.ugps.orzanizzeclone.activity.LoginActivity;
 
