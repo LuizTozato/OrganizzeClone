@@ -81,14 +81,14 @@
         android:hint="Senha"
         android:inputType="textPassword"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/botaoCadastrar"
+        app:layout_constraintBottom_toTopOf="@+id/botaoEntrar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editEmail" />
 
     <Button
-        android:id="@+id/botaoCadastrar"
+        android:id="@+id/botaoEntrar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -114,5 +114,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/botaoCadastrar" />
+        app:layout_constraintTop_toBottomOf="@+id/botaoEntrar" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -35,7 +35,7 @@ public class CadastroActivity extends AppCompatActivity {
         campoNome = findViewById(R.id.editNome);
         campoEmail = findViewById(R.id.editEmail);
         campoSenha = findViewById(R.id.editSenha);
-        botaoCadastrar = findViewById(R.id.botaoCadastrar);
+        botaoCadastrar = findViewById(R.id.botaoEntrar);
 
         botaoCadastrar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -76,8 +76,13 @@ public class CadastroActivity extends AppCompatActivity {
         ).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
+
                 if(task.isSuccessful()){
-                    Toast.makeText(CadastroActivity.this, "Sucesso ao cadastrar usuário!", Toast.LENGTH_SHORT).show();
+
+                    finish();
+                    //a ideia é fechar essa tela e cair na intro_cadastro que estava na pilha
+                    //Lá, faremos autenticação do usuário e iremos à activity_principal
+
                 } else {
 
                     String excecao = "";
