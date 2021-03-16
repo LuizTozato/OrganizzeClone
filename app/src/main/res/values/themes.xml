@@ -11,13 +11,26 @@
         <item name="hintTextColor">@android:color/darker_gray</item>
         <item name="android:textColorPrimary">@color/white</item>
 
-        <!-- Secondary brand color. -->
-
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+    </style>
 
-        <!-- Customize your theme here. -->
+    <!-- TEMA APLICADO NAS DESPESAS  !-->
+    <style name="despesaTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimaryDespesa</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkDespesa</item>
+        <item name="colorAccent">@color/colorAccentDespesa</item>
+    </style>
 
+    <!-- TEMA APLICADO NAS RECEITAS  !-->
+    <style name="receitaTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimaryReceita</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkReceita</item>
+        <item name="colorAccent">@color/colorAccentReceita</item>
     </style>
 
     <style name="Theme.OrzanizzeClone.NoActionBar">

@@ -18,6 +18,7 @@ import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
 import com.ugps.orzanizzeclone.R;
 import com.ugps.orzanizzeclone.config.ConfiguracaoFirebase;
+import com.ugps.orzanizzeclone.helper.Base64Custom;
 import com.ugps.orzanizzeclone.model.Usuario;
 
 public class CadastroActivity extends AppCompatActivity {
@@ -79,6 +80,10 @@ public class CadastroActivity extends AppCompatActivity {
 
                 if(task.isSuccessful()){
 
+                    //email em base64
+                    String idUsuario = Base64Custom.codificarBase64(usuario.getEmail());
+                    usuario.setIdUsuario(idUsuario);
+                    usuario.salvar();
                     finish();
                     //a ideia é fechar essa tela e cair na intro_cadastro que estava na pilha
                     //Lá, faremos autenticação do usuário e iremos à activity_principal

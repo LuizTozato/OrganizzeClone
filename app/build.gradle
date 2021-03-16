@@ -55,5 +55,5 @@ dependencies {
     implementation 'com.google.firebase:firebase-database:19.6.0'
     implementation 'com.google.firebase:firebase-auth:20.0.2'
     implementation 'com.heinrichreimersoftware:material-intro:2.0.0'
-
+    implementation 'com.github.clans:fab:1.6.4'
 }
