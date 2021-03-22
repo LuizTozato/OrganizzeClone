@@ -105,6 +105,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/fab_add"
-        android:onClick="salvarDespesa"
-         />
+        android:onClick="salvarDespesa"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
