@@ -13,6 +13,7 @@ public class Movimentacao {
     private String descricao;
     private String tipo;
     private double valor;
+    private String key;
 
     //==== CONSTRUTORES ====
     public Movimentacao() {
@@ -27,6 +28,14 @@ public class Movimentacao {
     }
 
     //==== GETTERS AND SETTERS ====
+    public String getKey() {
+        return key;
+    }
+
+    public void setKey(String key) {
+        this.key = key;
+    }
+
     public String getData() {
         return data;
     }
